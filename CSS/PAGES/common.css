@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Monserrat", sans-serif;
+}
+:root {
+    /* Declaro variables CSS con colores principales */
+    --color-theme: #ffce30;
+    --color-active:#288BA8;
+    --color-back-active: #746AB0;
+    --color-back-inactive: #c4c6c9;
+    --color-titulos: #E83845;
+    --color-texto-blanco: #fff;
+    --color-gradient: linear-gradient(to right,
+    var(--color-theme),
+    var(--color-back-active)
+    );
+}
+body {
+    background-color: #e0e0e0;
+    height: 100%;
+    width: 100%;
+}
+ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+button,
+a {
+    user-select: none;
+    -webkit-user-select: none;
+}
+header {
+    position: f;
+    top: 0;
+    width: 100%;
+    background-image: url('https://fondosmil.com/fondo/57389.jpg');
+    border-radius: 0 0% 20px 20px;
+    border-bottom: 2px solid var(--color-active);
+}
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+nav li {
+    flex:0 0 auto;
+    border-radius: 20% 20% 0px 0px;
+    margin: 0px 1px;
+}
+nav li a {
+    display: block;
+    padding: 16px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--color-texto-blanco);
+    border-radius: 20% 20% 0px 0px;
+    margin: 0px 1px;
+}
+nav li.current-page a {
+    color: var(--color-theme);
+    background-color: var(--color-active);
+    pointer-events: none;
+}
+main {
+    margin-top: 120px;
+    overflow: auto;
+    padding: 16px;
+    padding-bottom: 60px;
+    height: calc(100%- 120px);
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    margin:0;
+    color: var(--color-theme);
+}
+h1 > img {
+    width: 70px;
+    vertical-align: middle;
+    padding: 10px;
+}
+h2 {
+    color: var(--color-titulos);
+    margin: 16px 0;
+    text-align: center;
+}
+h3 {
+    color: var(--color-theme);
+    margin: 8px 0;
+}
+
+main section {
+    display: flex;
+    justify-content: space-around;
+}
+footer {
+    position: f;
+    bottom: 0px;
+    background-color: var(--color-active);
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+    footer p {
+    font-size: small;
+    color: var(--color-theme);
+}
+main p {
+    margin-bottom: 16px;
+}
+/* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
+@media (min-width: 400px) {
+ main {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+ footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+.loader {
+  width: 60px;
+  height: 60px;
+ }
+ .loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border-top: 2px solid #8900FF;
+  border-right: 2px solid transparent;
+  animation: spinner8217 0.8s linear infinite;
+ }
+  @keyframes spinner8217 {
+   to {
+    transform: rotate(360deg);
+    }
+   }
+.loader-container{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.display{
+  display: none;
+}
+.msg{
+  width: 50%;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 200;
+  text-align: center;
+}
+.amarillo{
+  background-color: #ffc107;
+}
+.rojo{
+  background-color:#dc3545;
+}
+.verde{
+    background-color:#28a745 ;
+}
+.gris{
+    background-color: #c4c6c9;
+}
+
+.griss{
+    background-color: #e0e0e0;
+}
+.caja1 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+font-size: 20px; 
+font-weight: 400px; 
+color: #ffffff; 
+background:#28a745
+}
+.caja2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+font-size: 20px; 
+font-weight: 400px; 
+color: #ffffff; 
+background:#dc3545
+}
+.caja3 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+font-size: 20px; 
+font-weight: 400px; 
+color: #ffffff; 
+background:#ffc107
+}
+.button {
+    background:#7f8c8d;
+    color:#;
+    display:;
+    font-size:;
+    margin:;
+    padding:10px 0;
+    text-align:center;
+    width:200px;
+    text-decoration:none;
+    box-shadow:0px 3px 0px #373c3c;
+    }
+    .button span {
+    margin-right:10px;
+    }
+    .button.medium {
+    width:150px;
+    }
+    .button.radius {
+    border-radius:50px;
+    }
+    .button:hover {
+    box-shadow:0px 0px 0px
+
+.paginacion {
+        position: ;
+        bottom: ;
+        width: ;
+        display: ;
+        justify-content: ;
+        gap: ;
+        padding: ;
+        }
+        
+.paginacion button {
+    cursor:;
+    border:;
+    display:;
+    align-items:;
+    justify-content:;
+    text-align:;
+    height:;
+    width:;
+    background-color: #;
+    color: #;
+    border-radius:;
+    font-family:;
+    font-weight:;
+    transition: .3s ease all;
+}
+    .paginacion button:hover {
+    background-color: var(--color-back-active)
+}
